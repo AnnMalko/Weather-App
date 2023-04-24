@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/648/648198.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">
+            <img id="icon" src="https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Partly_Cloudy-128.png"
+                alt="Weather icon" />
+            <p id="name">Global Weather</p>
+        </div>
+        <div id="header">
+            <input type="text" spellcheck="false" placeholder="Search city" id="input" />
+        </div>
+
+        <div id="when-where">
+            <p id="city"></p>
+            <p id="day"></p>
+            <p id="date"></p>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+        </div>
+
+        <div id="now">
+
+            <div class="vidget">
+                <p id="feelsLike">
+                    <i class="fas fa-temperature-high"></i></p>
+
+            </div>
+
+            <div class="vidget">
+                <p id="wind"><i class="fas fa-wind"></i></p>
+            </div>
+
+            <div class="vidget">
+                <p id="humidity"><i class="fas fa-tint"></i></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
